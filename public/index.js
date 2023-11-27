@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const movieListElement = document.getElementById("movieList");
   const favoritesListElement = document.getElementById("favoritesList");
 
-  // Save API Key 
+  // Save API Key
   const apiKey = "c3505eebf0ca93e8a8009d3b920ab28c";
   const tmdbApiUrl = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}`;
 
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((response) => response.json())
     .then((data) => {
       const movies = data.results;
-      
+
       displayMovies(movies);
     })
     .catch((error) => console.error("Error fetching data:", error));
@@ -84,11 +84,14 @@ document.addEventListener("DOMContentLoaded", () => {
     return updatedFavorites;
   }
 
+  
+  
   // Display favorites in the UI
   function displayFavorites() {
     const favorites = getFavorites();
     favoritesListElement.innerHTML = "";
-
+    
+    // movieElement.innerHTML = `<p>${movie.title} <button onclick="removeFromFavorites(${movie.id})">Remove</button></p>`;
     favorites.forEach((movie) => {
       const favoriteElement = document.createElement("div");
       favoriteElement.classList.add("movie");

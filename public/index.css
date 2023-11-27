@@ -4,16 +4,16 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body{
+    background-color: black;
+}
 header{
-  background:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url('./movie.png');
+  background:linear-gradient(rgba(0,0,0,.3),rgba(8, 4, 4, 0.3)), url('./movie.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 70vh;
   width: 100%;
-  padding: 0;
-  margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,51 +29,38 @@ h1:hover{
   color: #c0392b;
 }
 
-/* .movie {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2rem;
-  padding: 2rem;
-  cursor: pointer;
-} */
-
-
-
 .fav-text{
   text-decoration: none;
   text-align: center;
+    color: #fff;
 }
 
 #movieList, #favoritesList {
-
     padding: 20px;
-    background-color: #fff;
+    background-color: #000;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .movie, .favorite {
     margin-bottom: 10px;
+    margin-left: 1rem;
     padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 4px;
-    background-color: #fff;
-}
-
-.favorite {
-    background-color: #e74c3c;
     color: #fff;
-    border: none;
-    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: #000;
     cursor: pointer;
+}
+.favorite {
+    border: none;
 }
 
 .favorite:hover {
     background-color: greenyellow;
 }
 footer {
-  background: #3c3c3e;
+  background: #c0392b;
   text-align: center;
   color: white;
   padding: 2rem;
