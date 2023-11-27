@@ -1,0 +1,80 @@
+* {
+  font-family: 'Helvetica', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  background:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url('./movie.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  color: white;
+  line-height: 150%;
+  text-align: center;
+}
+
+h1:hover{
+  color: #c0392b;
+}
+
+/* .movie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  cursor: pointer;
+} */
+
+
+
+.fav-text{
+  text-decoration: none;
+  text-align: center;
+}
+
+#movieList, #favoritesList {
+
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.movie, .favorite {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.favorite {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.favorite:hover {
+    background-color: greenyellow;
+}
+footer {
+  background: #3c3c3e;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
